@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mo ta temperature</title>
+</head>
+<body>
+<script>
+    function Temperature(celsius) {
+        this.c = celsius;
+        this.f = celsius * 1.8 + 32;
+        this.k = celsius + 273;
+    }
+
+    let celsius = Number(prompt('nhap vao gia tri do c (gia tri nho nhat la -273)'));
+    let nhietDo = new Temperature(celsius);
+    document.write(celsius + ' độ C = ' + nhietDo.f + ' độ F = ' + nhietDo.k + ' độ K.');
+
+</script>
+</body>
+</html>
